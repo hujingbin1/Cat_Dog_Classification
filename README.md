@@ -214,7 +214,7 @@ pip install PyQt5
 
 UI界面展示：
 
-![image-20240113151650682](README.assets/image-20240113151650682.png)
+![image-20240113151650682](./README.assets/image-20240113151650682.png)
 Demo:
 
 见Demo文件夹
