@@ -214,7 +214,7 @@ pip install PyQt5
 
 UI界面展示：
 
-！[image](https://github.com/hujingbin1/Cat_Dog_Classification/blob/main/README.assets/image-20240113151650682.png)
+！[image]([https://github.com/hujingbin1/Cat_Dog_Classification/blob/main/README.assets/image-20240113151650682.png](https://github.com/hujingbin1/Cat_Dog_Classification/blob/main/image-20240113151650682.png))
 Demo:
 
 见Demo文件夹
