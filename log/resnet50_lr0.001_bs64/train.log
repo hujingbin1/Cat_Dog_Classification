@@ -1,0 +1,557 @@
+{'enable_modelarts': 'Whether training on modelarts, default: False', 'data_url': 'Dataset url for obs', 'checkpoint_url': 'The location of checkpoint for obs', 'data_path': 'Dataset path for local', 'output_path': 'Training output path for local', 'load_path': 'The location of checkpoint for obs', 'device_target': 'Target device type, available: [Ascend, GPU, CPU]', 'enable_profiling': 'Whether enable profiling while training, default: False', 'num_classes': 'Class for dataset', 'batch_size': 'Batch size for training and evaluation', 'epoch_size': 'Total training epochs.', 'checkpoint_path': 'The location of the checkpoint file.', 'checkpoint_file_path': 'The location of the checkpoint file.', 'save_graphs': 'Whether save graphs during training, default: False.', 'save_graphs_path': 'Path to save graphs.'}
+{'all_reduce_fusion_config': [85, 160],
+ 'batch_size': 32,
+ 'boost_mode': 'O0',
+ 'cache_session_id': '',
+ 'checkpoint_file_path': '',
+ 'checkpoint_path': './checkpoint/',
+ 'checkpoint_url': '',
+ 'ckpt_file': '',
+ 'class_num': 10,
+ 'config_path': '/data/hujingbin/ResNet50/mindspore_resnet50_husky_labrador/model_utils/config/resnet50_cifar10_config.yaml',
+ 'conv_init': 'XavierUniform',
+ 'data_path': '/cache/data',
+ 'data_url': '',
+ 'dataset': 'cifar10',
+ 'dense_init': 'TruncatedNormal',
+ 'device_id': 0,
+ 'device_num': 1,
+ 'device_target': 'Ascend',
+ 'enable_cache': False,
+ 'enable_modelarts': False,
+ 'enable_profiling': False,
+ 'epoch_size': 90,
+ 'eval_dataset_path': '',
+ 'eval_image_size': 224,
+ 'eval_interval': 1,
+ 'eval_start_epoch': 40,
+ 'file_format': 'MINDIR',
+ 'file_name': 'resnet50',
+ 'filter_weight': False,
+ 'has_trained_epoch': 0,
+ 'has_trained_step': 0,
+ 'height': 224,
+ 'infer_label': '',
+ 'keep_checkpoint_max': 10,
+ 'label_path': '',
+ 'lars_coefficient': 0.001,
+ 'lars_epsilon': 0.0,
+ 'load_path': '/cache/checkpoint_path/',
+ 'loss_scale': 1024,
+ 'lr_decay_mode': 'poly',
+ 'lr_end': 1e-05,
+ 'lr_init': 0.01,
+ 'lr_max': 0.1,
+ 'mode_name': 'GRAPH',
+ 'momentum': 0.9,
+ 'net_name': 'resnet50',
+ 'network_dataset': 'resnet50_cifar10',
+ 'optimizer': 'Momentum',
+ 'output_path': '/cache/train',
+ 'parameter_server': False,
+ 'pre_trained': '',
+ 'pretrain_epoch_size': 0,
+ 'result_path': '',
+ 'run_distribute': False,
+ 'run_eval': False,
+ 'save_best_ckpt': True,
+ 'save_checkpoint': True,
+ 'save_checkpoint_epochs': 5,
+ 'save_graphs': False,
+ 'save_graphs_path': './graphs',
+ 'train_image_size': 224,
+ 'train_url': '',
+ 'warmup_epochs': 5,
+ 'weight_decay': 0.0001,
+ 'width': 224}
+Please check the above information for the configurations
+Epoch 1/200
+----------
+train Loss: 0.782398
+val Acc: 0.5953733766233766
+Train epoch time: 290690.543 ms, per step time: 417.659 ms
+Epoch 2/200
+----------
+train Loss: 0.69293743
+val Acc: 0.5503246753246753
+Train epoch time: 260281.982 ms, per step time: 373.968 ms
+Epoch 3/200
+----------
+train Loss: 0.64755034
+val Acc: 0.6160714285714286
+Train epoch time: 263175.105 ms, per step time: 378.125 ms
+Epoch 4/200
+----------
+train Loss: 0.6092537
+val Acc: 0.643262987012987
+Train epoch time: 262409.906 ms, per step time: 377.026 ms
+Epoch 5/200
+----------
+train Loss: 0.5634512
+val Acc: 0.7183441558441559
+Train epoch time: 261385.567 ms, per step time: 375.554 ms
+Epoch 6/200
+----------
+train Loss: 0.5651104
+val Acc: 0.7349837662337663
+Train epoch time: 261275.801 ms, per step time: 375.396 ms
+Epoch 7/200
+----------
+train Loss: 0.42539862
+val Acc: 0.7479707792207793
+Train epoch time: 260746.071 ms, per step time: 374.635 ms
+Epoch 8/200
+----------
+train Loss: 0.36715657
+val Acc: 0.7378246753246753
+Train epoch time: 261306.623 ms, per step time: 375.441 ms
+Epoch 9/200
+----------
+train Loss: 0.41021132
+val Acc: 0.7719155844155844
+Train epoch time: 260574.557 ms, per step time: 374.389 ms
+Epoch 10/200
+----------
+train Loss: 0.26439598
+val Acc: 0.7897727272727273
+Train epoch time: 260451.846 ms, per step time: 374.212 ms
+Epoch 11/200
+----------
+train Loss: 0.26722336
+val Acc: 0.8120941558441559
+Train epoch time: 262572.460 ms, per step time: 377.259 ms
+Epoch 12/200
+----------
+train Loss: 0.45679778
+val Acc: 0.7999188311688312
+Train epoch time: 260210.561 ms, per step time: 373.866 ms
+Epoch 13/200
+----------
+train Loss: 0.518673
+val Acc: 0.8076298701298701
+Train epoch time: 260774.970 ms, per step time: 374.677 ms
+Epoch 14/200
+----------
+train Loss: 0.49415585
+val Acc: 0.8352272727272727
+Train epoch time: 260854.042 ms, per step time: 374.790 ms
+Epoch 15/200
+----------
+train Loss: 0.13293208
+val Acc: 0.8153409090909091
+Train epoch time: 260719.472 ms, per step time: 374.597 ms
+Epoch 16/200
+----------
+train Loss: 0.24951005
+val Acc: 0.8262987012987013
+Train epoch time: 261718.226 ms, per step time: 376.032 ms
+Epoch 17/200
+----------
+train Loss: 0.18936816
+val Acc: 0.838474025974026
+Train epoch time: 261923.470 ms, per step time: 376.327 ms
+Epoch 18/200
+----------
+train Loss: 0.2234737
+val Acc: 0.8068181818181818
+Train epoch time: 260189.244 ms, per step time: 373.835 ms
+Epoch 19/200
+----------
+train Loss: 0.38148072
+val Acc: 0.8198051948051948
+Train epoch time: 260902.431 ms, per step time: 374.860 ms
+Epoch 20/200
+----------
+train Loss: 0.21676995
+val Acc: 0.8530844155844156
+Train epoch time: 261333.611 ms, per step time: 375.479 ms
+Epoch 21/200
+----------
+train Loss: 0.31003267
+val Acc: 0.775974025974026
+Train epoch time: 261142.888 ms, per step time: 375.205 ms
+Epoch 22/200
+----------
+train Loss: 0.2758578
+val Acc: 0.8287337662337663
+Train epoch time: 260121.181 ms, per step time: 373.737 ms
+Epoch 23/200
+----------
+train Loss: 0.17306508
+val Acc: 0.8417207792207793
+Train epoch time: 261818.123 ms, per step time: 376.175 ms
+Epoch 24/200
+----------
+train Loss: 0.19074894
+val Acc: 0.8457792207792207
+Train epoch time: 261308.390 ms, per step time: 375.443 ms
+Epoch 25/200
+----------
+train Loss: 0.16406983
+val Acc: 0.846185064935065
+Train epoch time: 261196.535 ms, per step time: 375.282 ms
+Epoch 26/200
+----------
+train Loss: 0.07396048
+val Acc: 0.8530844155844156
+Train epoch time: 261429.226 ms, per step time: 375.617 ms
+Epoch 27/200
+----------
+train Loss: 0.06318108
+val Acc: 0.8494318181818182
+Train epoch time: 262047.430 ms, per step time: 376.505 ms
+Epoch 28/200
+----------
+train Loss: 0.021146052
+val Acc: 0.8405032467532467
+Train epoch time: 260282.020 ms, per step time: 373.968 ms
+Epoch 29/200
+----------
+train Loss: 0.070329875
+val Acc: 0.8287337662337663
+Train epoch time: 260867.549 ms, per step time: 374.810 ms
+Epoch 30/200
+----------
+train Loss: 0.14104463
+val Acc: 0.8400974025974026
+Train epoch time: 262205.962 ms, per step time: 376.733 ms
+Epoch 31/200
+----------
+train Loss: 0.004143961
+val Acc: 0.8486201298701299
+Train epoch time: 260498.259 ms, per step time: 374.279 ms
+Epoch 32/200
+----------
+train Loss: 0.0031462586
+val Acc: 0.8510551948051948
+Train epoch time: 261220.300 ms, per step time: 375.317 ms
+Epoch 33/200
+----------
+train Loss: 0.019326024
+val Acc: 0.8421266233766234
+Train epoch time: 260393.812 ms, per step time: 374.129 ms
+Epoch 34/200
+----------
+train Loss: 0.0042179455
+val Acc: 0.8441558441558441
+Train epoch time: 260037.994 ms, per step time: 373.618 ms
+Epoch 35/200
+----------
+train Loss: 0.010616244
+val Acc: 0.8409090909090909
+Train epoch time: 260504.715 ms, per step time: 374.288 ms
+Epoch 36/200
+----------
+train Loss: 0.011765381
+val Acc: 0.8469967532467533
+Train epoch time: 260196.249 ms, per step time: 373.845 ms
+Epoch 37/200
+----------
+train Loss: 0.02179352
+val Acc: 0.8640422077922078
+Train epoch time: 261535.870 ms, per step time: 375.770 ms
+Epoch 38/200
+----------
+train Loss: 0.03210193
+val Acc: 0.8603896103896104
+Train epoch time: 260251.629 ms, per step time: 373.925 ms
+Epoch 39/200
+----------
+train Loss: 0.020114973
+val Acc: 0.8603896103896104
+Train epoch time: 260625.316 ms, per step time: 374.462 ms
+Epoch 40/200
+----------
+train Loss: 0.020085609
+val Acc: 0.859172077922078
+Train epoch time: 260906.602 ms, per step time: 374.866 ms
+Epoch 41/200
+----------
+train Loss: 0.03425944
+val Acc: 0.8587662337662337
+Train epoch time: 259942.665 ms, per step time: 373.481 ms
+Epoch 42/200
+----------
+train Loss: 0.0025210863
+val Acc: 0.8583603896103896
+Train epoch time: 261335.491 ms, per step time: 375.482 ms
+Epoch 43/200
+----------
+train Loss: 0.046287876
+val Acc: 0.8668831168831169
+Train epoch time: 260734.033 ms, per step time: 374.618 ms
+Epoch 44/200
+----------
+train Loss: 0.0014080113
+val Acc: 0.8498376623376623
+Train epoch time: 261840.322 ms, per step time: 376.207 ms
+Epoch 45/200
+----------
+train Loss: 0.021639854
+val Acc: 0.8453733766233766
+Train epoch time: 260848.897 ms, per step time: 374.783 ms
+Epoch 46/200
+----------
+train Loss: 0.011496605
+val Acc: 0.8445616883116883
+Train epoch time: 260860.346 ms, per step time: 374.799 ms
+Epoch 47/200
+----------
+train Loss: 0.00063486357
+val Acc: 0.8579545454545454
+Train epoch time: 260636.168 ms, per step time: 374.477 ms
+Epoch 48/200
+----------
+train Loss: 0.042492017
+val Acc: 0.84375
+Train epoch time: 259841.228 ms, per step time: 373.335 ms
+Epoch 49/200
+----------
+train Loss: 0.0016326095
+val Acc: 0.8599837662337663
+Train epoch time: 260794.999 ms, per step time: 374.705 ms
+Epoch 50/200
+----------
+train Loss: 0.008065701
+val Acc: 0.8640422077922078
+Train epoch time: 260354.959 ms, per step time: 374.073 ms
+Epoch 51/200
+----------
+train Loss: 0.0029606512
+val Acc: 0.8628246753246753
+Train epoch time: 260788.156 ms, per step time: 374.696 ms
+Epoch 52/200
+----------
+train Loss: 0.023239104
+val Acc: 0.872564935064935
+Train epoch time: 261026.996 ms, per step time: 375.039 ms
+Epoch 53/200
+----------
+train Loss: 0.0017774593
+val Acc: 0.862012987012987
+Train epoch time: 261259.613 ms, per step time: 375.373 ms
+Epoch 54/200
+----------
+train Loss: 0.00020561836
+val Acc: 0.8599837662337663
+Train epoch time: 261103.166 ms, per step time: 375.148 ms
+Epoch 55/200
+----------
+train Loss: 0.00017193769
+val Acc: 0.8510551948051948
+Train epoch time: 260981.226 ms, per step time: 374.973 ms
+Epoch 56/200
+----------
+train Loss: 0.0036247363
+val Acc: 0.859577922077922
+Train epoch time: 260940.069 ms, per step time: 374.914 ms
+Epoch 57/200
+----------
+train Loss: 0.00024789432
+val Acc: 0.8693181818181818
+Train epoch time: 261845.140 ms, per step time: 376.214 ms
+Epoch 58/200
+----------
+train Loss: 0.002640538
+val Acc: 0.8681006493506493
+Train epoch time: 261742.177 ms, per step time: 376.066 ms
+Epoch 59/200
+----------
+train Loss: 0.02206578
+val Acc: 0.8603896103896104
+Train epoch time: 260667.816 ms, per step time: 374.523 ms
+Epoch 60/200
+----------
+train Loss: 7.372058e-05
+val Acc: 0.864448051948052
+Train epoch time: 261272.261 ms, per step time: 375.391 ms
+Epoch 61/200
+----------
+train Loss: 0.0014137131
+val Acc: 0.8729707792207793
+Train epoch time: 260724.321 ms, per step time: 374.604 ms
+Epoch 62/200
+----------
+train Loss: 0.00017212368
+val Acc: 0.8636363636363636
+Train epoch time: 261365.046 ms, per step time: 375.524 ms
+Epoch 63/200
+----------
+train Loss: 0.07166782
+val Acc: 0.864448051948052
+Train epoch time: 262188.745 ms, per step time: 376.708 ms
+Epoch 64/200
+----------
+train Loss: 0.0018687542
+val Acc: 0.869724025974026
+Train epoch time: 260805.336 ms, per step time: 374.720 ms
+Epoch 65/200
+----------
+train Loss: 0.0011787539
+val Acc: 0.8693181818181818
+Train epoch time: 260671.176 ms, per step time: 374.528 ms
+Epoch 66/200
+----------
+train Loss: 0.000508752
+val Acc: 0.8652597402597403
+Train epoch time: 261054.514 ms, per step time: 375.078 ms
+Epoch 67/200
+----------
+train Loss: 0.0061720316
+val Acc: 0.8563311688311688
+Train epoch time: 261559.891 ms, per step time: 375.804 ms
+Epoch 68/200
+----------
+train Loss: 0.00045111863
+val Acc: 0.8693181818181818
+Train epoch time: 261276.685 ms, per step time: 375.398 ms
+Epoch 69/200
+----------
+train Loss: 0.0065489397
+val Acc: 0.8636363636363636
+Train epoch time: 260685.336 ms, per step time: 374.548 ms
+Epoch 70/200
+----------
+train Loss: 0.00054873555
+val Acc: 0.8510551948051948
+Train epoch time: 261428.743 ms, per step time: 375.616 ms
+Epoch 71/200
+----------
+train Loss: 0.0067539182
+val Acc: 0.8587662337662337
+Train epoch time: 261514.715 ms, per step time: 375.740 ms
+Epoch 72/200
+----------
+train Loss: 0.000505956
+val Acc: 0.8705357142857143
+Train epoch time: 261049.057 ms, per step time: 375.070 ms
+Epoch 73/200
+----------
+train Loss: 0.0063647674
+val Acc: 0.864448051948052
+Train epoch time: 260704.566 ms, per step time: 374.576 ms
+Epoch 74/200
+----------
+train Loss: 0.028305018
+val Acc: 0.8656655844155844
+Train epoch time: 261306.625 ms, per step time: 375.441 ms
+Epoch 75/200
+----------
+train Loss: 1.8998178e-05
+val Acc: 0.8713474025974026
+Train epoch time: 262232.789 ms, per step time: 376.771 ms
+Epoch 76/200
+----------
+train Loss: 0.006581849
+val Acc: 0.8729707792207793
+Train epoch time: 261522.472 ms, per step time: 375.751 ms
+Epoch 77/200
+----------
+train Loss: 0.0009044382
+val Acc: 0.8713474025974026
+Train epoch time: 261320.522 ms, per step time: 375.461 ms
+Epoch 78/200
+----------
+train Loss: 0.005502078
+val Acc: 0.8729707792207793
+Train epoch time: 261484.890 ms, per step time: 375.697 ms
+Epoch 79/200
+----------
+train Loss: 0.00081491
+val Acc: 0.8717532467532467
+Train epoch time: 260845.369 ms, per step time: 374.778 ms
+Epoch 80/200
+----------
+train Loss: 0.002105859
+val Acc: 0.8632305194805194
+Train epoch time: 260921.994 ms, per step time: 374.888 ms
+Epoch 81/200
+----------
+train Loss: 0.0002282693
+val Acc: 0.8701298701298701
+Train epoch time: 261421.790 ms, per step time: 375.606 ms
+Epoch 82/200
+----------
+train Loss: 0.00018970773
+val Acc: 0.8741883116883117
+Train epoch time: 261598.952 ms, per step time: 375.861 ms
+Epoch 83/200
+----------
+train Loss: 0.0005480791
+val Acc: 0.8668831168831169
+Train epoch time: 261516.081 ms, per step time: 375.741 ms
+Epoch 84/200
+----------
+train Loss: 0.00023961137
+val Acc: 0.8652597402597403
+Train epoch time: 261032.822 ms, per step time: 375.047 ms
+Epoch 85/200
+----------
+train Loss: 0.000104983585
+val Acc: 0.8693181818181818
+Train epoch time: 261110.490 ms, per step time: 375.159 ms
+Epoch 86/200
+----------
+train Loss: 9.532619e-05
+val Acc: 0.862012987012987
+Train epoch time: 262079.530 ms, per step time: 376.551 ms
+Epoch 87/200
+----------
+train Loss: 0.002189536
+val Acc: 0.8660714285714286
+Train epoch time: 261158.708 ms, per step time: 375.228 ms
+Epoch 88/200
+----------
+train Loss: 0.00010312325
+val Acc: 0.8612012987012987
+Train epoch time: 261328.440 ms, per step time: 375.472 ms
+Epoch 89/200
+----------
+train Loss: 0.00052078796
+val Acc: 0.8628246753246753
+Train epoch time: 261421.375 ms, per step time: 375.605 ms
+Epoch 90/200
+----------
+train Loss: 8.045336e-06
+val Acc: 0.8571428571428571
+Train epoch time: 261689.022 ms, per step time: 375.990 ms
+Epoch 91/200
+----------
+train Loss: 1.6159725e-05
+val Acc: 0.8713474025974026
+Train epoch time: 260894.090 ms, per step time: 374.848 ms
+Epoch 92/200
+----------
+train Loss: 1.7497034e-05
+val Acc: 0.8713474025974026
+Train epoch time: 260426.747 ms, per step time: 374.176 ms
+Epoch 93/200
+----------
+train Loss: 8.172996e-05
+val Acc: 0.8652597402597403
+Train epoch time: 261426.009 ms, per step time: 375.612 ms
+Epoch 94/200
+----------
+train Loss: 0.0002989921
+val Acc: 0.8701298701298701
+Train epoch time: 260957.666 ms, per step time: 374.939 ms
+Epoch 95/200
+----------
+train Loss: 0.32170197
+val Acc: 0.8599837662337663
+Train epoch time: 260436.507 ms, per step time: 374.190 ms
+Epoch 96/200
+----------
+train Loss: 0.0017919414
+val Acc: 0.8681006493506493
+Train epoch time: 261893.619 ms, per step time: 376.284 ms
+Epoch 97/200
+----------
+train Loss: 0.0010290357
+val Acc: 0.8668831168831169
+Train epoch time: 261094.945 ms, per step time: 375.136 ms
+Epoch 98/200
+----------
+train Loss: 1.789052e-05
+val Acc: 0.8583603896103896
+Train epoch time: 261715.816 ms, per step time: 376.028 ms

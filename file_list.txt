@@ -1,0 +1,11 @@
+./file_path.py
+./resnet50_lr0.01_opt-adam_bs64/train.log
+./resnet152_lr0.1_bs64/train.log
+./resnet50_lr0.1_bs64/train.log
+./resnet50_attention_lr0.1_bs256/train.log
+./resnet50_lr0.1_bs256/train.log
+./cnn50_lr0.1_bs64/train.log
+./resnet101_lr0.1_bs64/train.log
+./resnet50_lr0.001_opt-adam_bs64/train.log
+./resnet50_lr0.01_bs64/train.log
+./resnet50_lr0.01_bs256/train.log

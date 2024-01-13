@@ -1,0 +1,192 @@
+{'enable_modelarts': 'Whether training on modelarts, default: False', 'data_url': 'Dataset url for obs', 'checkpoint_url': 'The location of checkpoint for obs', 'data_path': 'Dataset path for local', 'output_path': 'Training output path for local', 'load_path': 'The location of checkpoint for obs', 'device_target': 'Target device type, available: [Ascend, GPU, CPU]', 'enable_profiling': 'Whether enable profiling while training, default: False', 'num_classes': 'Class for dataset', 'batch_size': 'Batch size for training and evaluation', 'epoch_size': 'Total training epochs.', 'checkpoint_path': 'The location of the checkpoint file.', 'checkpoint_file_path': 'The location of the checkpoint file.', 'save_graphs': 'Whether save graphs during training, default: False.', 'save_graphs_path': 'Path to save graphs.'}
+{'all_reduce_fusion_config': [85, 160],
+ 'batch_size': 32,
+ 'boost_mode': 'O0',
+ 'cache_session_id': '',
+ 'checkpoint_file_path': '',
+ 'checkpoint_path': './checkpoint/',
+ 'checkpoint_url': '',
+ 'ckpt_file': '',
+ 'class_num': 10,
+ 'config_path': '/data/hujingbin/ResNet50/mindspore_resnet50_husky_labrador/model_utils/config/resnet50_cifar10_config.yaml',
+ 'conv_init': 'XavierUniform',
+ 'data_path': '/cache/data',
+ 'data_url': '',
+ 'dataset': 'cifar10',
+ 'dense_init': 'TruncatedNormal',
+ 'device_id': 0,
+ 'device_num': 1,
+ 'device_target': 'Ascend',
+ 'enable_cache': False,
+ 'enable_modelarts': False,
+ 'enable_profiling': False,
+ 'epoch_size': 90,
+ 'eval_dataset_path': '',
+ 'eval_image_size': 224,
+ 'eval_interval': 1,
+ 'eval_start_epoch': 40,
+ 'file_format': 'MINDIR',
+ 'file_name': 'resnet50',
+ 'filter_weight': False,
+ 'has_trained_epoch': 0,
+ 'has_trained_step': 0,
+ 'height': 224,
+ 'infer_label': '',
+ 'keep_checkpoint_max': 10,
+ 'label_path': '',
+ 'lars_coefficient': 0.001,
+ 'lars_epsilon': 0.0,
+ 'load_path': '/cache/checkpoint_path/',
+ 'loss_scale': 1024,
+ 'lr_decay_mode': 'poly',
+ 'lr_end': 1e-05,
+ 'lr_init': 0.01,
+ 'lr_max': 0.1,
+ 'mode_name': 'GRAPH',
+ 'momentum': 0.9,
+ 'net_name': 'resnet50',
+ 'network_dataset': 'resnet50_cifar10',
+ 'optimizer': 'Momentum',
+ 'output_path': '/cache/train',
+ 'parameter_server': False,
+ 'pre_trained': '',
+ 'pretrain_epoch_size': 0,
+ 'result_path': '',
+ 'run_distribute': False,
+ 'run_eval': False,
+ 'save_best_ckpt': True,
+ 'save_checkpoint': True,
+ 'save_checkpoint_epochs': 5,
+ 'save_graphs': False,
+ 'save_graphs_path': './graphs',
+ 'train_image_size': 224,
+ 'train_url': '',
+ 'warmup_epochs': 5,
+ 'weight_decay': 0.0001,
+ 'width': 224}
+Please check the above information for the configurations
+Epoch 1/200
+----------
+train Loss: 0.6893728
+val Acc: 0.5242598684210527
+Train epoch time: 354523.694 ms, per step time: 1018.746 ms
+Epoch 2/200
+----------
+train Loss: 0.67013043
+val Acc: 0.5016447368421053
+Train epoch time: 385918.854 ms, per step time: 1108.962 ms
+Epoch 3/200
+----------
+train Loss: 0.65617865
+val Acc: 0.5460526315789473
+Train epoch time: 375171.246 ms, per step time: 1078.078 ms
+Epoch 4/200
+----------
+train Loss: 0.6922308
+val Acc: 0.5407072368421053
+Train epoch time: 385832.753 ms, per step time: 1108.715 ms
+Epoch 5/200
+----------
+train Loss: 0.6918504
+val Acc: 0.5522203947368421
+Train epoch time: 391036.122 ms, per step time: 1123.667 ms
+Epoch 6/200
+----------
+train Loss: 0.68614477
+val Acc: 0.5032894736842105
+Train epoch time: 385995.359 ms, per step time: 1109.182 ms
+Epoch 7/200
+----------
+train Loss: 0.68091017
+val Acc: 0.5004111842105263
+Train epoch time: 386951.258 ms, per step time: 1111.929 ms
+Epoch 8/200
+----------
+train Loss: 0.6726605
+val Acc: 0.5592105263157895
+Train epoch time: 389601.292 ms, per step time: 1119.544 ms
+Epoch 9/200
+----------
+train Loss: 0.71896446
+val Acc: 0.5472861842105263
+Train epoch time: 386205.347 ms, per step time: 1109.785 ms
+Epoch 10/200
+----------
+train Loss: 0.71559924
+val Acc: 0.501233552631579
+Train epoch time: 385073.766 ms, per step time: 1106.534 ms
+Epoch 11/200
+----------
+train Loss: 0.6943824
+val Acc: 0.5538651315789473
+Train epoch time: 385829.114 ms, per step time: 1108.704 ms
+Epoch 12/200
+----------
+train Loss: 0.66746414
+val Acc: 0.5575657894736842
+Train epoch time: 374080.606 ms, per step time: 1074.944 ms
+Epoch 13/200
+----------
+train Loss: 0.67406
+val Acc: 0.5497532894736842
+Train epoch time: 386083.598 ms, per step time: 1109.436 ms
+Epoch 14/200
+----------
+train Loss: 0.7076139
+val Acc: 0.5575657894736842
+Train epoch time: 374848.322 ms, per step time: 1077.150 ms
+Epoch 15/200
+----------
+train Loss: 0.66061246
+val Acc: 0.5625
+Train epoch time: 392776.076 ms, per step time: 1128.667 ms
+Epoch 16/200
+----------
+train Loss: 0.6880581
+val Acc: 0.5185032894736842
+Train epoch time: 385488.900 ms, per step time: 1107.727 ms
+Epoch 17/200
+----------
+train Loss: 0.66228086
+val Acc: 0.561266447368421
+Train epoch time: 386544.564 ms, per step time: 1110.760 ms
+Epoch 18/200
+----------
+train Loss: 0.6623746
+val Acc: 0.548108552631579
+Train epoch time: 386517.838 ms, per step time: 1110.683 ms
+Epoch 19/200
+----------
+train Loss: 0.68599975
+val Acc: 0.563733552631579
+Train epoch time: 390773.083 ms, per step time: 1122.911 ms
+Epoch 20/200
+----------
+train Loss: 0.67475116
+val Acc: 0.5662006578947368
+Train epoch time: 391170.249 ms, per step time: 1124.052 ms
+Epoch 21/200
+----------
+train Loss: 0.7201134
+val Acc: 0.5645559210526315
+Train epoch time: 386652.156 ms, per step time: 1111.069 ms
+Epoch 22/200
+----------
+train Loss: 0.6853249
+val Acc: 0.5604440789473685
+Train epoch time: 384795.108 ms, per step time: 1105.733 ms
+Epoch 23/200
+----------
+train Loss: 0.6833216
+val Acc: 0.5703125
+Train epoch time: 391075.850 ms, per step time: 1123.781 ms
+Epoch 24/200
+----------
+train Loss: 0.7135118
+val Acc: 0.6295230263157895
+Train epoch time: 390024.876 ms, per step time: 1120.761 ms
+Epoch 25/200
+----------
+train Loss: 0.67119336
+val Acc: 0.6291118421052632
+Train epoch time: 384311.446 ms, per step time: 1104.343 ms
