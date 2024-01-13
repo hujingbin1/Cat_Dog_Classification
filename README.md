@@ -2,7 +2,7 @@
 
 ## 项目简介
 
-基于MindsSpore框架实现了一个简单的二分类猫狗分类器，使用ResNet50网络进行训练，ONNX进行模型部署，并通过PyQt5进行简单的UI界面展示
+基于MindSpore框架实现了一个简单的二分类猫狗分类器，使用ResNet50网络进行训练，ONNX进行模型部署，并通过PyQt5进行简单的UI界面展示
 
 ## 环境配置
 
@@ -216,7 +216,7 @@ UI界面展示：
 
 
 
-![image-20240113151650682](./README.assets/image-20240113151650682.png)
+![image](./README.assets/image-20240113151650682.png)
 
 
 
