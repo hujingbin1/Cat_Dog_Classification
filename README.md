@@ -29,143 +29,147 @@ CheckPoint模型权重文件（放于项目根目录下）：
 
 ## 目录介绍
 
-​    |-- cnn101.py
-​    |-- cnn152.py
-​    |-- cnn50.py
-​    |-- env.sh
-​    |-- export.py
-​    |-- file_list.txt
-​    |-- infer.py
-​    |-- onnx_infer.py
-​    |-- process_data.py
-​    |-- README.md
-​    |-- resnet.py
-​    |-- resnet101.py
-​    |-- resnet152.py
-​    |-- train.py
-​    |-- train_256.py
-​    |-- train_adam.py
-​    |-- train_attention.py
-​    |-- train_cnn.sh
-​    |-- train_continue.py
-​    |-- train_test.py
-​    |-- train_transfer.py
-​    |-- val.py
-​    |-- dataset
-​    |   |-- PetImages
-​    |       |-- clean.py
-​    |       |-- partition.py
-​    |       |-- Cat
-​    |       |-- Dog
-​    |-- log
-​    |   |-- file_list.txt
-​    |   |-- file_path.py
-​    |   |-- cnn101_lr0.1_bs64
-​    |   |   |-- train.log
-​    |   |-- cnn152_lr0.1_bs64
-​    |   |   |-- train.log
-​    |   |-- cnn50_lr0.1_bs64
-​    |   |   |-- train.log
-​    |   |-- resnet101_lr0.1_bs64
-​    |   |   |-- train.log
-​    |   |-- resnet152_lr0.1_bs64
-​    |   |   |-- train.log
-​    |   |-- resnet50_attention_lr0.1_bs256
-​    |   |   |-- train.log
-​    |   |-- resnet50_lr0.001_bs64
-​    |   |   |-- train.log
-​    |   |-- resnet50_lr0.001_opt-adam_bs64
-​    |   |   |-- train.log
-​    |   |-- resnet50_lr0.01_bs256
-​    |   |   |-- train.log
-​    |   |-- resnet50_lr0.01_bs64
-​    |   |   |-- train.log
-​    |   |-- resnet50_lr0.01_opt-adam_bs64
-​    |   |   |-- train.log
-​    |   |-- resnet50_lr0.1_bs256
-​    |   |   |-- train.log
-​    |   |-- resnet50_lr0.1_bs64
-​    |       |-- train.log
-​    |-- model_utils
-​    |   |-- config.py
-​    |   |-- config
-​    |   |   |-- resnet101_imagenet2012_config.yaml
-​    |   |   |-- resnet152_imagenet2012_config.yaml
-​    |   |   |-- resnet18_cifar10_config.yaml
-​    |   |   |-- resnet18_cifar10_config_gpu.yaml
-​    |   |   |-- resnet18_imagenet2012_config.yaml
-​    |   |   |-- resnet18_imagenet2012_config_gpu.yaml
-​    |   |   |-- resnet34_imagenet2012_config.yaml
-​    |   |   |-- resnet50_cifar10_config.yaml
-​    |   |   |-- resnet50_imagenet2012_Ascend_Thor_config.yaml
-​    |   |   |-- resnet50_imagenet2012_Boost_config.yaml
-​    |   |   |-- resnet50_imagenet2012_config.yaml
-​    |   |   |-- resnet50_imagenet2012_GPU_Thor_config.yaml
-​    |   |   |-- resnet_benchmark_GPU.yaml
-​    |   |   |-- se-resnet50_imagenet2012_config.yaml
-​    |   |-- __pycache__
-​    |       |-- config.cpython-37.pyc
-​    |       |-- config.cpython-39.pyc
-​    |-- output
-​    |-- plot_log
-​    |   |-- file_list.txt
-​    |   |-- plot_log.py
-​    |   |-- csv_data
-​    |   |   |-- cnn101_lr0.1_bs64
-​    |   |   |   |-- training_data.csv
-​    |   |   |-- cnn152_lr0.1_bs64
-​    |   |   |   |-- training_data.csv
-​    |   |   |-- cnn50_lr0.1_bs64
-​    |   |   |   |-- training_data.csv
-​    |   |   |-- resnet101_lr0.1_bs64
-​    |   |   |   |-- training_data.csv
-​    |   |   |-- resnet152_lr0.1_bs64
-​    |   |   |   |-- training_data.csv
-​    |   |   |-- resnet50_attention_lr0.1_bs256
-​    |   |   |   |-- training_data.csv
-​    |   |   |-- resnet50_lr0.001_bs64
-​    |   |   |   |-- training_data.csv
-​    |   |   |-- resnet50_lr0.001_opt-adam_bs64
-​    |   |   |   |-- training_data.csv
-​    |   |   |-- resnet50_lr0.01_bs256
-​    |   |   |   |-- training_data.csv
-​    |   |   |-- resnet50_lr0.01_bs64
-​    |   |   |   |-- training_data.csv
-​    |   |   |-- resnet50_lr0.01_opt-adam_bs64
-​    |   |   |   |-- training_data.csv
-​    |   |   |-- resnet50_lr0.1_bs256
-​    |   |   |   |-- training_data.csv
-​    |   |   |-- resnet50_lr0.1_bs64
-​    |   |       |-- training_data.csv
-​    |   |-- img
-​    |       |-- cnn101_lr0.1_bs64
-​    |       |   |-- training_validation_plot.png
-​    |       |-- cnn152_lr0.1_bs64
-​    |       |   |-- training_validation_plot.png
-​    |       |-- cnn50_lr0.1_bs64
-​    |       |   |-- training_validation_plot.png
-​    |       |-- resnet101_lr0.1_bs64
-​    |       |   |-- training_validation_plot.png
-​    |       |-- resnet152_lr0.1_bs64
-​    |       |   |-- training_validation_plot.png
-​    |       |-- resnet50_attention_lr0.1_bs256
-​    |       |   |-- training_validation_plot.png
-​    |       |-- resnet50_lr0.001_bs64
-​    |       |   |-- training_validation_plot.png
-​    |       |-- resnet50_lr0.001_opt-adam_bs64
-​    |       |   |-- training_validation_plot.png
-​    |       |-- resnet50_lr0.01_bs256
-​    |       |   |-- training_validation_plot.png
-​    |       |-- resnet50_lr0.01_bs64
-​    |       |   |-- training_validation_plot.png
-​    |       |-- resnet50_lr0.01_opt-adam_bs64
-​    |       |   |-- training_validation_plot.png
-​    |       |-- resnet50_lr0.1_bs256
-​    |       |   |-- training_validation_plot.png
-​    |       |-- resnet50_lr0.1_bs64
-​    |           |-- training_validation_plot.png
-​    |-- __pycache__
-​        |-- resnet.cpython-39.pyc
+    ```
+    |-- cnn101.py
+    ​    |-- cnn152.py
+    ​    |-- cnn50.py
+    ​    |-- env.sh
+    ​    |-- export.py
+    ​    |-- file_list.txt
+    ​    |-- infer.py
+    ​    |-- onnx_infer.py
+    ​    |-- process_data.py
+    ​    |-- README.md
+    ​    |-- resnet.py
+    ​    |-- resnet101.py
+    ​    |-- resnet152.py
+    ​    |-- train.py
+    ​    |-- train_256.py
+    ​    |-- train_adam.py
+    ​    |-- train_attention.py
+    ​    |-- train_cnn.sh
+    ​    |-- train_continue.py
+    ​    |-- train_test.py
+    ​    |-- train_transfer.py
+    ​    |-- val.py
+    ​    |-- dataset
+    ​    |   |-- PetImages
+    ​    |       |-- clean.py
+    ​    |       |-- partition.py
+    ​    |       |-- Cat
+    ​    |       |-- Dog
+    ​    |-- log
+    ​    |   |-- file_list.txt
+    ​    |   |-- file_path.py
+    ​    |   |-- cnn101_lr0.1_bs64
+    ​    |   |   |-- train.log
+    ​    |   |-- cnn152_lr0.1_bs64
+    ​    |   |   |-- train.log
+    ​    |   |-- cnn50_lr0.1_bs64
+    ​    |   |   |-- train.log
+    ​    |   |-- resnet101_lr0.1_bs64
+    ​    |   |   |-- train.log
+    ​    |   |-- resnet152_lr0.1_bs64
+    ​    |   |   |-- train.log
+    ​    |   |-- resnet50_attention_lr0.1_bs256
+    ​    |   |   |-- train.log
+    ​    |   |-- resnet50_lr0.001_bs64
+    ​    |   |   |-- train.log
+    ​    |   |-- resnet50_lr0.001_opt-adam_bs64
+    ​    |   |   |-- train.log
+    ​    |   |-- resnet50_lr0.01_bs256
+    ​    |   |   |-- train.log
+    ​    |   |-- resnet50_lr0.01_bs64
+    ​    |   |   |-- train.log
+    ​    |   |-- resnet50_lr0.01_opt-adam_bs64
+    ​    |   |   |-- train.log
+    ​    |   |-- resnet50_lr0.1_bs256
+    ​    |   |   |-- train.log
+    ​    |   |-- resnet50_lr0.1_bs64
+    ​    |       |-- train.log
+    ​    |-- model_utils
+    ​    |   |-- config.py
+    ​    |   |-- config
+    ​    |   |   |-- resnet101_imagenet2012_config.yaml
+    ​    |   |   |-- resnet152_imagenet2012_config.yaml
+    ​    |   |   |-- resnet18_cifar10_config.yaml
+    ​    |   |   |-- resnet18_cifar10_config_gpu.yaml
+    ​    |   |   |-- resnet18_imagenet2012_config.yaml
+    ​    |   |   |-- resnet18_imagenet2012_config_gpu.yaml
+    ​    |   |   |-- resnet34_imagenet2012_config.yaml
+    ​    |   |   |-- resnet50_cifar10_config.yaml
+    ​    |   |   |-- resnet50_imagenet2012_Ascend_Thor_config.yaml
+    ​    |   |   |-- resnet50_imagenet2012_Boost_config.yaml
+    ​    |   |   |-- resnet50_imagenet2012_config.yaml
+    ​    |   |   |-- resnet50_imagenet2012_GPU_Thor_config.yaml
+    ​    |   |   |-- resnet_benchmark_GPU.yaml
+    ​    |   |   |-- se-resnet50_imagenet2012_config.yaml
+    ​    |   |-- __pycache__
+    ​    |       |-- config.cpython-37.pyc
+    ​    |       |-- config.cpython-39.pyc
+    ​    |-- output
+    ​    |-- plot_log
+    ​    |   |-- file_list.txt
+    ​    |   |-- plot_log.py
+    ​    |   |-- csv_data
+    ​    |   |   |-- cnn101_lr0.1_bs64
+    ​    |   |   |   |-- training_data.csv
+    ​    |   |   |-- cnn152_lr0.1_bs64
+    ​    |   |   |   |-- training_data.csv
+    ​    |   |   |-- cnn50_lr0.1_bs64
+    ​    |   |   |   |-- training_data.csv
+    ​    |   |   |-- resnet101_lr0.1_bs64
+    ​    |   |   |   |-- training_data.csv
+    ​    |   |   |-- resnet152_lr0.1_bs64
+    ​    |   |   |   |-- training_data.csv
+    ​    |   |   |-- resnet50_attention_lr0.1_bs256
+    ​    |   |   |   |-- training_data.csv
+    ​    |   |   |-- resnet50_lr0.001_bs64
+    ​    |   |   |   |-- training_data.csv
+    ​    |   |   |-- resnet50_lr0.001_opt-adam_bs64
+    ​    |   |   |   |-- training_data.csv
+    ​    |   |   |-- resnet50_lr0.01_bs256
+    ​    |   |   |   |-- training_data.csv
+    ​    |   |   |-- resnet50_lr0.01_bs64
+    ​    |   |   |   |-- training_data.csv
+    ​    |   |   |-- resnet50_lr0.01_opt-adam_bs64
+    ​    |   |   |   |-- training_data.csv
+    ​    |   |   |-- resnet50_lr0.1_bs256
+    ​    |   |   |   |-- training_data.csv
+    ​    |   |   |-- resnet50_lr0.1_bs64
+    ​    |   |       |-- training_data.csv
+    ​    |   |-- img
+    ​    |       |-- cnn101_lr0.1_bs64
+    ​    |       |   |-- training_validation_plot.png
+    ​    |       |-- cnn152_lr0.1_bs64
+    ​    |       |   |-- training_validation_plot.png
+    ​    |       |-- cnn50_lr0.1_bs64
+    ​    |       |   |-- training_validation_plot.png
+    ​    |       |-- resnet101_lr0.1_bs64
+    ​    |       |   |-- training_validation_plot.png
+    ​    |       |-- resnet152_lr0.1_bs64
+    ​    |       |   |-- training_validation_plot.png
+    ​    |       |-- resnet50_attention_lr0.1_bs256
+    ​    |       |   |-- training_validation_plot.png
+    ​    |       |-- resnet50_lr0.001_bs64
+    ​    |       |   |-- training_validation_plot.png
+    ​    |       |-- resnet50_lr0.001_opt-adam_bs64
+    ​    |       |   |-- training_validation_plot.png
+    ​    |       |-- resnet50_lr0.01_bs256
+    ​    |       |   |-- training_validation_plot.png
+    ​    |       |-- resnet50_lr0.01_bs64
+    ​    |       |   |-- training_validation_plot.png
+    ​    |       |-- resnet50_lr0.01_opt-adam_bs64
+    ​    |       |   |-- training_validation_plot.png
+    ​    |       |-- resnet50_lr0.1_bs256
+    ​    |       |   |-- training_validation_plot.png
+    ​    |       |-- resnet50_lr0.1_bs64
+    ​    |           |-- training_validation_plot.png
+    ​    |-- __pycache__
+    ​        |-- resnet.cpython-39.pyc
+    ```
+
+
 
 ## 代码说明
 
@@ -185,7 +189,7 @@ Train:
 
 Log:
 
-`该部分为模型训练过程的日志保存文件`夹
+`该部分为模型训练过程的日志保存文件夹`
 
 Output:
 
